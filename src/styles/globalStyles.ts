@@ -19,18 +19,47 @@ body {
 .container {
   margin: 0 ${st.indentations.ind_400};
 
+
+  @media (min-width: ${st.breakpoints.sm}) {
+    margin: 0 ${st.indentations.ind_1000};
+  }
+
   @media (min-width: ${st.breakpoints.md}) {
-    margin: 0 ${st.indentations.ind_1200};
+    margin: 0 ${st.indentations.ind_1400};
   }
 
   @media (min-width: ${st.breakpoints.lg}) {
+    max-width: 950px;
     margin: 0 auto;
-    max-width: 70rem;
+  }
+
+  @media (min-width: ${st.breakpoints.xl}) {
+    max-width: 1170px;
   }
 }
 
-.page-min-height {
-  min-height: calc(100vh - 144px);
+h2 {
+  font-size: ${st.fontSizes.fs_700};
+  font-weight: 600;
+  line-height: 150%;
+  color: ${st.colors.nt_4};
+}
+
+p {
+  line-height: 180%;
+  color: ${st.colors.nt_5};
+}
+
+@media screen and (min-width: ${st.breakpoints.md}) {
+  h2 {
+    font-size: ${st.fontSizes.fs_1000};
+    line-height: 70px;
+  }
+
+  p {
+    font-size: ${st.fontSizes.fs_500};
+    line-height: 36px;
+  }
 }
 
 // Fonts

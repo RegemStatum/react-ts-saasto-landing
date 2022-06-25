@@ -1,8 +1,6 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import CompanyPros from "../components/homePage/CompanyPros";
-import Features from "../components/homePage/Features";
-import Hero from "../components/homePage/Hero";
+import { Hero, CompanyPros, Features, Analytics } from "../components/homePage";
 
 const HomePage: FC = () => {
   return (
@@ -10,6 +8,7 @@ const HomePage: FC = () => {
       <Hero />
       <CompanyPros />
       <Features />
+      <Analytics />
     </Wrapper>
   );
 };

@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 import { Hero, CompanyPros, Features, Analytics } from "../components/homePage";
+import Partners from "../components/homePage/Partners";
 import TrackerWork from "../components/homePage/TrackerWork";
 import UsageOptions from "../components/homePage/UsageOptions";
 
@@ -13,6 +14,7 @@ const HomePage: FC = () => {
       <Analytics />
       <TrackerWork />
       <UsageOptions />
+      <Partners />
     </Wrapper>
   );
 };

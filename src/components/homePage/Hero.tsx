@@ -57,6 +57,7 @@ const Wrapper = styled.div`
   @media screen and (min-width: ${st.breakpoints.xs}) {
     h1 {
       max-width: 100%;
+      font-size: ${st.fontSizes.fs_900};
     }
   }
 

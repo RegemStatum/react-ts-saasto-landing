@@ -204,12 +204,15 @@ const Wrapper = styled.div`
 
   @media screen and (min-width: ${st.breakpoints.xs}) {
     .alarm {
-      left: 250px;
-      top: 23px;
+      left: 400px;
+      top: -15px;
     }
 
     .vector-2 {
+      width: 150px;
+      height: 30px;
       top: 90px;
+      left: 10px;
     }
   }
 

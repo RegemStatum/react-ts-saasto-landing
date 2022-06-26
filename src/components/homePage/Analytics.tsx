@@ -19,7 +19,7 @@ const Analytics: FC = () => {
           <h2>Analytics &#38; Reporting Brackdown</h2>
           <img src={vector1} alt="vector" className="vector-1" />
         </div>
-        <p>
+        <p className="description">
           An enim nullam tempor sapien gravida donec enim ipsum porta justo
           congue magna at pretium purus pretium ligula
         </p>
@@ -97,6 +97,14 @@ const Wrapper = styled.div`
   @media screen and (min-width: ${st.breakpoints.md}) {
     margin-top: 120px;
 
+    .description {
+      margin-bottom: ${st.indentations.ind_1600};
+    }
+
+    .items {
+      gap: ${st.indentations.ind_1600};
+    }
+
     .mobile {
       width: 760px;
       height: 714px;
@@ -104,6 +112,8 @@ const Wrapper = styled.div`
     }
 
     .heading-container {
+      margin-bottom: 20px;
+
       .vector-1 {
         width: 176px;
         height: 35px;
@@ -117,7 +127,6 @@ const Wrapper = styled.div`
   @media screen and (min-width: ${st.breakpoints.xl}) {
     margin-top: 180px;
     display: flex;
-    gap: 34px;
 
     .mobile {
       transform: translateX(-12px);

@@ -9,7 +9,7 @@ interface Props {
   iconBgClr: string;
 }
 
-const AnalyticsItem: FC<Props> = ({ heading, text, iconBgClr, icon }) => {
+const TrackerItem: FC<Props> = ({ heading, text, iconBgClr, icon }) => {
   return (
     <Wrapper iconBgColor={iconBgClr}>
       <div className="icon-container">
@@ -39,7 +39,7 @@ const Wrapper = styled.div<Style>`
 
     .icon {
       width: 31px;
-      height: 31px;
+      min-height: 31px;
       margin: 13px;
     }
   }
@@ -60,20 +60,27 @@ const Wrapper = styled.div<Style>`
   }
 
   @media screen and (min-width: ${st.breakpoints.md}) {
+    align-items: center;
+    gap: ${st.indentations.ind_1600};
+
     .icon-container {
       border-radius: ${st.borderRadiuses.br_2};
-
       .icon {
-        width: 48px;
-        height: 48px;
-        margin: 20px;
+        width: 68px;
+        height: 68px;
+        margin: ${st.indentations.ind_1000};
       }
     }
 
-    .info h3 {
-      font-size: ${st.fontSizes.fs_700};
+    .info {
+      max-width: 300px;
+
+      h3 {
+        font-size: ${st.fontSizes.fs_700};
+        line-height: 52px;
+      }
     }
   }
 `;
 
-export default AnalyticsItem;
+export default TrackerItem;

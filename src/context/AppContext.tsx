@@ -2,7 +2,7 @@ import React, { FC, useContext, useState } from "react";
 
 const Context = React.createContext({
   isSidebarOpen: false,
-  handleBurgerMenuClick: () => {},
+  toggleSidebar: () => {},
 });
 
 interface Props {
@@ -12,12 +12,12 @@ interface Props {
 const AppContext: FC<Props> = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const handleBurgerMenuClick = () => {
-    setIsSidebarOpen(true);
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
   };
 
   return (
-    <Context.Provider value={{ isSidebarOpen, handleBurgerMenuClick }}>
+    <Context.Provider value={{ isSidebarOpen, toggleSidebar }}>
       {children}
     </Context.Provider>
   );

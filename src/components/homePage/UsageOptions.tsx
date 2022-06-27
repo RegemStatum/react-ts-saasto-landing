@@ -55,6 +55,7 @@ const UsageOptions: FC = () => {
 
 const Wrapper = styled.div`
   padding-top: ${st.indentations.ind_1900};
+  overflow: hidden;
 
   .container {
     position: relative;

@@ -8,10 +8,10 @@ interface Props {
 }
 
 const BurgerMenu: FC<Props> = ({ className = "" }) => {
-  const { handleBurgerMenuClick, isSidebarOpen } = useAppContext();
+  const { toggleSidebar, isSidebarOpen } = useAppContext();
 
   const handleClick = () => {
-    handleBurgerMenuClick();
+    toggleSidebar();
   };
 
   return (

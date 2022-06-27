@@ -3,9 +3,6 @@ import styled from "styled-components";
 import st from "../../styles";
 import { Logo } from "../ui";
 import BurgerMenu from "../ui/layout/BurgerMenu";
-import links from "../../constants/pageLinks";
-import { Link } from "react-router-dom";
-import Button from "../ui/buttons/Button";
 import HeaderLinks from "./HeaderLinks";
 import HeaderLoginBtns from "./HeaderLoginBtns";
 

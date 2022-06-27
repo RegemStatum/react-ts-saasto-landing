@@ -16,7 +16,7 @@ const HeaderLinks: FC = () => {
   );
 };
 
-const Wrapper = styled.div`
+const Wrapper = styled.nav`
   margin: 0 auto;
   display: flex;
   gap: ${st.indentations.ind_1400};

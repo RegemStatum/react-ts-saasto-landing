@@ -11,7 +11,10 @@ const CompanyPros: FC = () => {
   // check is section visible
   useEffect(() => {
     const visibilityHandler = () => {
-      let sectionRect = sectionRef.current!.getBoundingClientRect();
+      let sectionRect = sectionRef.current?.getBoundingClientRect();
+      if (!sectionRect) {
+        return;
+      }
       let topPos = sectionRect.top;
       let botPos = sectionRect.bottom;
       let scrolledHeight = window.scrollY;
@@ -162,10 +165,10 @@ const Wrapper = styled.div`
       content: "";
       display: block;
       width: 112px;
-      height: 160px;
+      height: 162px;
       position: absolute;
       right: 23px;
-      bottom: 20px;
+      bottom: 18px;
       transform: translateX(100%);
       background-color: #fff;
       clip-path: polygon(0 0, 100% 100%, 0 100%);

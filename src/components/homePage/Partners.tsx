@@ -32,6 +32,7 @@ const Partners: FC = () => {
 const Wrapper = styled.div`
   padding-top: ${st.indentations.ind_1900};
   position: relative;
+  overflow: hidden;
 
   .heading-container {
     margin-bottom: ${st.indentations.ind_500};

@@ -1,9 +1,14 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import styled from "styled-components";
 import st from "../../styles";
 import { vector1 } from "../../assets/images/clientsReviews";
+import ClientsSlider from "./ClientsSlider";
+import ClientImage from "./ClientImage";
+import ClientsBgElements from "./ClientsBgElements";
 
 const ClientsReviews: FC = () => {
+  const [clientId, setClientId] = useState(1);
+
   return (
     <Wrapper>
       <div className="container">
@@ -11,7 +16,11 @@ const ClientsReviews: FC = () => {
           <h2>What our client says</h2>
           <img src={vector1} alt="vector-1" className="vector-1" />
         </div>
-        <p>FINISH THE SLIDER</p>
+        <div className="slider-container">
+          <ClientImage clientId={clientId} />
+          <ClientsSlider setClientId={setClientId} />
+        </div>
+        <ClientsBgElements />
       </div>
     </Wrapper>
   );
@@ -19,9 +28,14 @@ const ClientsReviews: FC = () => {
 
 const Wrapper = styled.div`
   padding: 80px 0;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+  }
 
   .heading-container {
-    margin-bottom: ${st.indentations.ind_500};
+    margin-bottom: 30px;
     position: relative;
     text-transform: capitalize;
 
@@ -34,24 +48,48 @@ const Wrapper = styled.div`
       width: 116px;
       height: 23px;
       position: absolute;
-      top: 13px;
+      top: 17px;
       left: 50%;
-      transform: translateX(-50px);
+      transform: translateX(-200px);
       opacity: 0.5;
       z-index: 0;
     }
   }
 
   @media screen and (min-width: ${st.breakpoints.md}) {
+    padding-top: 120px;
+
     .heading-container {
-      margin-bottom: 20px;
+      margin-bottom: 70px;
 
       .vector-1 {
         width: 176px;
         height: 35px;
         top: 39px;
-        transform: translateX(-25px);
+        transform: translateX(-150px);
         opacity: 1;
+      }
+    }
+  }
+
+  @media screen and (min-width: ${st.breakpoints.lg}) {
+    padding-top: 173px;
+    padding-bottom: 140px;
+
+    .heading-container {
+      margin-bottom: 116px;
+      text-align: center;
+
+      .vector-1 {
+        transform: translateX(50px);
+      }
+    }
+
+    .slider-container {
+      display: flex;
+
+      & > div:first-child {
+        flex-shrink: 0;
       }
     }
   }

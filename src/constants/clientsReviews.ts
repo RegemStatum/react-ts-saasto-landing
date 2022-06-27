@@ -1,10 +1,40 @@
+import photo1 from "../assets/images/clientsReviews/photo-1.jpg";
+import photo2 from "../assets/images/clientsReviews/photo-2.jpg";
+import photo3 from "../assets/images/clientsReviews/photo-3.jpg";
+import photo4 from "../assets/images/clientsReviews/photo-4.jpg";
+
 const clientsReviews = [
   {
-    image: "",
+    image: photo1,
     description:
       "Leading an organization is incredibly rewarding and equally humbling. Confidence and humility. Every success is built on lessons from mistakes made is incredibly rewarding",
     name: "Mila McSabbu",
     position: "Designer",
+    id: 0,
+  },
+  {
+    image: photo2,
+    description:
+      "Leading an organization is incredibly rewarding and equally humbling. Confidence and humility. Every success is built on lessons from mistakes made is incredibly rewarding",
+    name: "Mc Laren",
+    position: "Front End",
+    id: 1,
+  },
+  {
+    image: photo3,
+    description:
+      "Leading an organization is incredibly rewarding and equally humbling. Confidence and humility. Every success is built on lessons from mistakes made is incredibly rewarding",
+    name: "Tom Holland",
+    position: "Back End",
+    id: 2,
+  },
+  {
+    image: photo4,
+    description:
+      "Leading an organization is incredibly rewarding and equally humbling. Confidence and humility. Every success is built on lessons from mistakes made is incredibly rewarding",
+    name: "Sigmund Freid",
+    position: "Full Stack",
+    id: 3,
   },
 ];
 

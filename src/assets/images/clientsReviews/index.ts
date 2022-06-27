@@ -1,6 +1,6 @@
 import vector1 from "./vector-1.svg";
-import vector2 from "./vector-1.svg";
-import vector3 from "./vector-1.svg";
+import vector2 from "./vector-2.svg";
+import vector3 from "./vector-3.svg";
 
 import like from "./like.png";
 import chat from "./chat.png";

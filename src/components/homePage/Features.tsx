@@ -74,7 +74,8 @@ const Wrapper = styled.div`
   .vector-1 {
     position: absolute;
     top: 65px;
-    right: 15px;
+    left: 50%;
+    transform: translateX(20px);
     z-index: -1;
   }
 

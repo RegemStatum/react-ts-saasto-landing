@@ -50,7 +50,7 @@ const Wrapper = styled.div`
       position: absolute;
       top: 17px;
       left: 50%;
-      transform: translateX(-70px);
+      transform: translateX(-160px);
       opacity: 0.5;
       z-index: 0;
     }

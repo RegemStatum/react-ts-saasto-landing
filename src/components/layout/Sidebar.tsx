@@ -39,7 +39,6 @@ const Wrapper = styled.div<Style>`
   z-index: 500;
   transition: width 0.2s ease-in;
   overflow: hidden;
-  border-bottom: 1px solid grey;
   margin-bottom: -1px;
 
   aside {

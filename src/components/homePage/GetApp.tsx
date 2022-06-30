@@ -1,11 +1,6 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import {
-  vector1,
-  appStore,
-  googlePlay,
-  hand2,
-} from "../../assets/images/getApp";
+import { vector1, appStore, googlePlay } from "../../assets/images/getApp";
 import st from "../../styles";
 import Button from "../ui/buttons/Button";
 import GetAppBgElements from "./GetAppBgElements";

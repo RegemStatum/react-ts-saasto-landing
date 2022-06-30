@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import { SwiperSlide } from "swiper/react";
 import st from "../../styles";
 
 interface Props {

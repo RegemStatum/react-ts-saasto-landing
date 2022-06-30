@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef, useState } from "react";
+import React, { FC, useRef, useState } from "react";
 import styled from "styled-components";
 import FeaturesCard from "./FeaturesCard";
 import {
@@ -12,7 +12,7 @@ import st from "../../styles";
 
 const Features: FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
 
   // // check is section visible
   // useEffect(() => {

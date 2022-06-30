@@ -1,4 +1,4 @@
-import React, { FC, useRef, useState } from "react";
+import React, { FC, useRef } from "react";
 import styled from "styled-components";
 import FeaturesCard from "./FeaturesCard";
 import {

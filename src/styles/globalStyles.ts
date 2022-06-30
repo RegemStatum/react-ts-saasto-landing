@@ -62,6 +62,72 @@ p {
   }
 }
 
+// Animations
+.slide-from-bottom {
+  animation: slide-from-bottom 0.3s ease-in;
+}
+
+.slide-from-top {
+  animation: slide-from-top 0.3s ease-in;
+}
+
+.slide-from-left {
+  animation: slide-from-left 0.3s ease-in;
+}
+
+.slide-from-right {
+  animation: slide-from-right 0.3s ease-in;
+}
+
+
+@keyframes slide-from-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-from-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 // Fonts
 // ----------
 // Inter

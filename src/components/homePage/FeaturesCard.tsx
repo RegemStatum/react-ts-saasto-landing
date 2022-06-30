@@ -8,6 +8,7 @@ interface Props {
   text: string;
   bgColor: string;
   iconBgColor: string;
+  className?: string;
 }
 
 const FeaturesCard: FC<Props> = ({
@@ -16,9 +17,10 @@ const FeaturesCard: FC<Props> = ({
   text,
   bgColor,
   iconBgColor,
+  className = "",
 }) => {
   return (
-    <Wrapper bgColor={bgColor} iconBgColor={iconBgColor}>
+    <Wrapper bgColor={bgColor} iconBgColor={iconBgColor} className={className}>
       <div className="img-container">
         <img src={icon} alt="icon" width={33} height={33} />
       </div>

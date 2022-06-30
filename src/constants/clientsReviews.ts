@@ -1,7 +1,7 @@
-import photo1 from "../assets/images/clientsReviews/photo-1.jpg";
-import photo2 from "../assets/images/clientsReviews/photo-2.jpg";
-import photo3 from "../assets/images/clientsReviews/photo-3.jpg";
-import photo4 from "../assets/images/clientsReviews/photo-4.jpg";
+import photo1 from "../assets/images/clientsReviews/photo-1.webp";
+import photo2 from "../assets/images/clientsReviews/photo-2.webp";
+import photo3 from "../assets/images/clientsReviews/photo-3.webp";
+import photo4 from "../assets/images/clientsReviews/photo-4.webp";
 
 const clientsReviews = [
   {

@@ -34,6 +34,7 @@ interface Style {
 }
 
 const Wrapper = styled.div<Style>`
+  height: 100vh;
   position: absolute;
   background-color: #fff;
   z-index: 500;
@@ -43,6 +44,7 @@ const Wrapper = styled.div<Style>`
 
   aside {
     width: 90%;
+
     margin: ${st.indentations.ind_1700} auto;
   }
 

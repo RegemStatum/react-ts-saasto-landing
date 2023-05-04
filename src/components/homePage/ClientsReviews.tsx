@@ -7,7 +7,7 @@ import ClientImage from "./ClientImage";
 import ClientsBgElements from "./ClientsBgElements";
 
 const ClientsReviews: FC = () => {
-  const [clientId, setClientId] = useState(1);
+  const [clientId, setClientId] = useState(0);
 
   return (
     <Wrapper>
